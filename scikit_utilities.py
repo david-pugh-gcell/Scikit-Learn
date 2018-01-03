@@ -18,7 +18,7 @@ def sigmoid(z):
 def get_iris_data():
 
     #Load Iris Dataset from SKLearn
-    iris = datasets.load_iris()
+    iris = datasets.load_iris(test_size=0.3)
 
     #To see a snapshot use Pandas to create dataframe
     #irisdf = pd.DataFrame(datasets.load_iris().data)
@@ -33,7 +33,7 @@ def get_iris_data():
     print(np.unique(y))
 
     ##split the dataset into training and test datasets - 30% will be test data 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=0)
     print('Training Data set is %d values long' %len(X_train))
 
     #Feature scaling for optimal performance
