@@ -15,10 +15,10 @@ def sigmoid(z):
     return 1.0/(1.0 + np.exp(-z))
 
 
-def get_iris_data():
+def get_iris_data(test_size=0.3):
 
     #Load Iris Dataset from SKLearn
-    iris = datasets.load_iris(test_size=0.3)
+    iris = datasets.load_iris()
 
     #To see a snapshot use Pandas to create dataframe
     #irisdf = pd.DataFrame(datasets.load_iris().data)
