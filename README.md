@@ -6,12 +6,12 @@ Influenced heavily by Python Machine Learning (Sebastian Raschka) Chapter 3.
 ## Data
 Many of the examples use the [Iris Data Set](https://archive.ics.uci.edu/ml/datasets/iris), which comes bundled with Scikit-Learn. This is loaded, split into test:training sets and standardised before it is used for the modelling. The [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) is used for standardisation - the fit function estimates the sample mean and std deviation for each feature dimension in the training data, and these are used to transform the training and test data sets. 
 
-''' Python
+'
 sc = StandardScaler()
 sc.fit(X_train)
 X_train_std = sc.transform(X_train)
 X_test_std = sc.transform(X_test)
-'''
+'
 
 ## Utilities Module
 The utilities Python Module has a number of useful functions that are used in the notebooks:
