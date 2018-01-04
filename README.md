@@ -1,4 +1,4 @@
-# Playing with Scilearn kit in Jupyter Notebooks
+# Playing with Scilkit-Learn using Jupyter Notebooks
 
 Working through [Scikit-learn](http://scikit-learn.org/stable/) library to 
 Influenced heavily by Python Machine Learning (Sebastian Raschka) Chapter 3.
