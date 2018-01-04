@@ -1,7 +1,9 @@
 # Playing with Scilearn kit in Jupyter Notebooks
 
 Working through Scklearn kit 
-Influenced heavily by Python Machine Learning (Sebastian Raschka) Chapter 3
+Influenced heavily by Python Machine Learning (Sebastian Raschka) Chapter 3.
+
+Many of the examples use the Iris Data Set, which comes bundled with SciLearnKit. This is loaded, split into test:training sets and standardised before it is used for the modelling.
 
 The utilities Python Module has a number of useful functions that are used in the notebooks:
 
