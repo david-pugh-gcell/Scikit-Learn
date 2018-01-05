@@ -15,7 +15,7 @@ def sigmoid(z):
     return 1.0/(1.0 + np.exp(-z))
 
 
-def get_iris_data(test_size=0.3):
+def get_iris_data():
 
     #Load Iris Dataset from SKLearn
     iris = datasets.load_iris()
@@ -33,7 +33,7 @@ def get_iris_data(test_size=0.3):
     print(np.unique(y))
 
     ##split the dataset into training and test datasets - 30% will be test data 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
     print('Training Data set is %d values long' %len(X_train))
 
     #Feature scaling for optimal performance
@@ -48,7 +48,7 @@ def get_iris_data(test_size=0.3):
     X_combined_std = np.vstack((X_train_std, X_test_std))
     y_combined = np.hstack((y_train, y_test))
 
-    return X_train_std, y_train, X_test_std, y_test, X_combined_std, y_combined
+    return X_train_std, y_train, X_test_std, y_test, X_combined_std, y_combined, X_train, X_test
 
 
 #Plot convienece function to visualise decision boundary
