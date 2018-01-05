@@ -6,7 +6,9 @@ Influenced heavily by Python Machine Learning (Sebastian Raschka) Chapter 3.
 ## Data
 Many of the examples use the [Iris Data Set](https://archive.ics.uci.edu/ml/datasets/iris), which comes bundled with Scikit-Learn. This is loaded, split into test:training sets and standardised before it is used for the modelling. 
 
-Data splitting is perfeomed using the [test_train_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) utility, defaulting with a test size of 30%.
+The initial Notebook looks at the data set in more detail and does some basic exploratory data analysis on it.
+
+Data splitting is performed using the [test_train_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) utility, defaulting with a test size of 30%.
 
 ```Python
  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
@@ -28,3 +30,14 @@ The utilities Python Module has a number of useful functions that are used in th
 
 
 * `plot_decision_regions(X,y,classifier, test_idx=None, resolution=0.02)`  -> plots the data and the decision regions produced by a model
+
+
+## Models
+
+A number of classification models are used to classify the samples via teh Petal length and width:
+1. Perceptron
+2. Logistic Regression, including looking at the Sigmoid Function 
+3. Support Vector Machines (SVM)
+4. Decision Tree
+5. Random Forest
+6. K-Nearest Neighnour (KNN)
